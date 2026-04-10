@@ -1,45 +1,32 @@
-# 📈 Monitoramento de Servidor com Prometheus e Grafana
+# 📊 Laboratório de Observabilidade: Prometheus & Grafana
 
-Este projeto é uma aplicação simples em **JavaScript** que utiliza **Prometheus** e **Grafana** para monitorar o uso do servidor. Com essa aplicação, é possível visualizar gráficos detalhados do desempenho e do uso dos recursos do servidor, ajudando a identificar possíveis problemas e a otimizar o ambiente.
+Uma Prova de Conceito (PoC) local desenvolvida para explorar os pilares de **Observabilidade e Telemetria** em aplicações Backend. O laboratório simula a instrumentação de uma API JavaScript (Node.js) para coleta, armazenamento e visualização de métricas de infraestrutura em tempo real.
 
 ---
 
-## 📸 Pré-visualização
+## 🏗️ Arquitetura do Laboratório
 
-### Dashboard do Grafana
+Este ambiente de testes foi configurado localmente para validar a integração entre o ecossistema de monitoramento:
+
+* **Node.js (JavaScript):** Aplicação alvo instrumentada para expor métricas (como volume de requisições e uso de recursos).
+* **Prometheus:** Time-series database configurado para fazer o *scraping* (coleta) contínua das métricas expostas pela aplicação alvo.
+* **Grafana:** Plataforma de visualização conectada ao Prometheus para construção de dashboards interativos, permitindo a identificação de gargalos e anomalias.
+
+---
+
+## 📸 Evidências da Implementação
+
+> 💡 **Nota Histórica:** Este projeto é um laboratório de infraestrutura executado em ambiente local (localhost) no ano de 2023. As capturas de tela abaixo documentam o sucesso da integração e a visualização dos dados no momento da validação da PoC.
+
+### Dashboard de Telemetria (Grafana)
 <div align="center">
-  <img src="grafana.png" alt="Dashboard do Grafana">
+  <img src="grafana.png" alt="Dashboard do Grafana exibindo painéis de monitoramento">
 </div>
 
-### Gráficos de Monitoramento
+### Análise de Métricas Brutas
 <div align="center">
-  <img src="pre-graf.png" alt="Gráficos de Monitoramento com Grafana">
+  <img src="pre-graf.png" alt="Visualização de Gráficos e queries de Monitoramento">
 </div>
 
 ---
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Linguagem**: JavaScript
-- **Monitoramento**: Prometheus
-- **Visualização**: Grafana
-
----
-
-## 🔍 Funcionalidades
-
-- **Coleta de Dados com Prometheus**: Armazena métricas sobre o uso do servidor, como CPU, memória e latência.
-- **Visualização de Gráficos com Grafana**: Exibe os dados coletados em tempo real com gráficos interativos e personalizáveis.
-- **Monitoramento Contínuo**: Permite acompanhar o uso do servidor continuamente para detectar anomalias e melhorar a eficiência.
-
----
-
-## Objetivo do Projeto
-
-- Aprender a configurar e integrar **Prometheus** e **Grafana** para monitoramento de aplicações.
-- Explorar a coleta e visualização de métricas de desempenho do servidor.
-- Praticar o uso de ferramentas de monitoramento em uma aplicação JavaScript.
-
----
-
-📚 *Projeto desenvolvido para entender os conceitos de monitoramento e análise de desempenho com Prometheus e Grafana.*
+*Projeto mantido como registro de evolução técnica, focado em práticas de SRE (Site Reliability Engineering) e monitoramento de performance de servidores.*
